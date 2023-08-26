@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css">
     <title>Prework Study Guide</title>
   </head>
   <body>
@@ -12,7 +13,7 @@
       <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
     </header>
     <main>
-      <section class=""card" id=""html-section">
+      <section class="card" id=""html-section">
         <h2>HTML</h2>
         <ul>
           <li> To create a list on a webpage you can use "ol" and "ul" to make ordered or unordered lists respectively.</li>
@@ -29,15 +30,34 @@
           <li> The element p represents a paragraph or block of text. Can be used to wrap text on a webpage.</li>
           <li> The img element contains information about images that are displayed on the webpage.</li>
           <li> The a element allows you to create a hyperlink to the any webpage linked by the href attribute, which points to the URL of the website for the link</li>
-          
+          <li> While you can just put bulleted list items without actually containing them in a ul or ol it's not a very good idea, as changes you make to ol/ul with CSS will not apply. I made this mistake for a bit when setting up the CSS then wondered why it wasn't working, turns out I made a blunder.</li>
         </ul>
 
       </section>
       <section class="card" id="css-section">
+        <h2>CSS</h2>
+        <ul>
+        <li> A CSS rule is made up of a selector and a declaration block, with squiggly brackets confining the block. </li>
+        <li> The declarations have a property and value, with the property being followed by a colon and the value a semicolon.</li>
+        <li> A selector defines the element or attributes that the rules, or declarations will apply.</li>
+        <li> The margin property acts as a buffer space that is the space around the outside of an element.</li>
+        <li> The padding property works similar to margin but it deals with space around content inside an element.</li>
+        <li> You can combine two selectors into a single CSS rule with a comma.</li>
+        <li> Assigning the block value to the display property causes each image to be assigned to a new line.</li>
+        <li> The text align property is one of the possible positioning properties, which can be used as a method to center a title or heading on a webpage.</li>
+        <li> If you are using an external CSS style sheet remember to link the file so the CSS is actually applied.</li>
+        <li style="color:rgb(255, 0, 191)"><strong>CSS can also be put directly into the code of a file as well through inline CSS which directly changes visual aspects of a single list item or heading. I have changed this one with this method to demonstrate.</strong></li><!-- I bolded it as well to assert my power, Idk it was 2am and I got bored.-->
+        <li> Another way is an internal style sheet, which provides CSS rules for the webpage in the head section of the HTML file. The rules will only apply to that page though, with a single change being able to apply to all tagged page elements.</li>
+        <li> Important note, while editors can have rgb values named that you can easily pull, you can also just put in your own values if desired with the line rgb then in parenthases the values you wish for r,g,b respectively.</li>
+        <li> You can preceed a selector with a period which designates it as a class selector, which will apply the property assignments from the CSS to any HTML element assigned to the class given.</li>
+      </ul>
+
+
 
       </section>
       <section class="card" id="git-section">
         <h2>Git</h2>
+        <ul>
         <li> The command cd in git means change directory, it can be used to change which directory you're working in.</li>
         <li> The command git status checks what the current branch is and any changes that have been made to it will be shown in case you</li>
         <li> The git command must precede every Git statement.</li>
@@ -46,16 +66,21 @@
         <li> The git commit command creates a commit with the currently staged changes, with -m denoting a message to describe what the commit entails. IT IS IMPORTANT TO CONCICELY SAY WHAT YOU ARE DOING.</li>
         <li> The command git pull tells it to receive a branch's changes into the local environment. In the case of "git pull origin main" the origin keyword indicates that the source will be in the GitHub repo, and main indicating the branch being taken.</li>
         <li> The push command allows you to push a branch to GitHub much like the pull allows you to pull from the repo, to do so you'd push origin with whatever follows origin being the name of the branch you want to push.</li>
-        <li></li>
+        <li> Git pull origin main is a useful way to make sure you have the most up to date version of the main if you just pushed an update.</li>
+        <li> It will absolutely not let you change to a different branch unless you commit, no matter what. I do feel at times I'm basically stumbling through this.</li>
+      </ul>
       </section>
       <section class="card" id="javascript-section">
+        <ul>
 
+        </ul>
       </section>
     
     </main>
 
     <footer>
-      <p>I might code yet!</p>
+      <p>But what if it was purple</p>
+      
     </footer>
   </body>
 </html>
