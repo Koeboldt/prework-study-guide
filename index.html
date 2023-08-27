@@ -32,6 +32,8 @@
           <li> The img element contains information about images that are displayed on the webpage.</li>
           <li> The a element allows you to create a hyperlink to the any webpage linked by the href attribute, which points to the URL of the website for the link</li>
           <li> While you can just put bulleted list items without actually containing them in a ul or ol it's not a very good idea, as changes you make to ol/ul with CSS will not apply. I made this mistake for a bit when setting up the CSS then wondered why it wasn't working, turns out I made a blunder.</li>
+          <li> Section can be used to partition various pieces of text or imagery on a webpage, and allows you to name a class for a section to allow for easier CSS changes and more.</li>
+          <li> Image elements, and CSS must be linked to if they are external. Which images will almost always be.</li>
         </ul>
 
       </section>
@@ -64,17 +66,21 @@
         <li> The git command must precede every Git statement.</li>
         <li> The checkout command "git checkout" moves the working branch to a new branch, with -b denoting to create a new branch with the name being whatever follows after the b</li>
         <li> The git add command adds modifications made to the current working branch to the staging area, with the flag -A denoting to add all changes.</li>
-        <li> The git commit command creates a commit with the currently staged changes, with -m denoting a message to describe what the commit entails. IT IS IMPORTANT TO CONCICELY SAY WHAT YOU ARE DOING.</li>
+        <li> The git commit command creates a commit with the currently staged changes, with -m "" being the message to describe what the commit entails. IT IS IMPORTANT TO CONCICELY SAY WHAT YOU ARE DOING.</li>
         <li> The command git pull tells it to receive a branch's changes into the local environment. In the case of "git pull origin main" the origin keyword indicates that the source will be in the GitHub repo, and main indicating the branch being taken.</li>
         <li> The push command allows you to push a branch to GitHub much like the pull allows you to pull from the repo, to do so you'd push origin with whatever follows origin being the name of the branch you want to push.</li>
-        <li> Git pull origin main is a useful way to make sure you have the most up to date version of the main if you just pushed an update.</li>
-        <li> It will absolutely not let you change to a different branch unless you commit, no matter what. I do feel at times I'm basically stumbling through this.</li>
+        <li> Git pull origin main is a useful way to make sure you have the most up to date version of the main if you just pushed an update, because if you are up to date it will tell you.</li>
+        <li> It will absolutely not let you change to a different branch unless you commit, no matter what. </li>
         <li> To go up a directory use the command cd ..</li>
+        <li> The variable . tells whatever command it's used with to activate in the current directory, and .. causes it to be in the parent directory.</li>
+
       </ul>
       </section>
       <section class="card" id="javascript-section">
         <h2> JavaScript</h2>
         <ul>
+        <li> JavaScript is read top to bottom. This is called conrol flow, and different languages can have different control flows.</li>
+        <li> A variable is a named container that allows us to store data in our code.</li>
         <li> To declare a variable you use the var keyword followed by the name you want to give the variable, then followed by the = sign.</li>
         <li> Each line of JavaScript ends with a semicolon.</li>
         <li> Console.log is a method to output a message to the web console by adding an argument, which in this file it outputs the value of the topics variable.</li>
@@ -89,16 +95,18 @@
         <li> The final statement allows the array to iterate each item, basically telling the loop what to do each time it runs. "x++ denotes that it will add 1 every time it loops"</li>
         <li> For loops start with for followed by the statements in parenthases, which is then followed by the code you want exectuted.</li>  
         <li> To comment something out put /* in front of the section you want commented and end the comment with */</li>
-        <li> </li>
-        
-        
+        <li> A functions name is followed by () which defines parameters that can be placed, but even if none are placed inside it is still required for a function. </li>
+        <li> To create a function you use the function keyword much like you do with variables.</li>
+        <li> With functions, if statements, for loops, and other similar things the code is housed in squigly brackets that follow the command.</li>
+        <li> Remember to declare your variables first thing, because it will save you a lot of headaches trying to figure out why things don't work.</li>
+        <li> The math object can be used to do various things. In this file math.random allows for the variable to be defined as a random index value.</li>
       </ul>
       </section>
     
     </main>
 
     <footer>
-      <p>But what if it was purple</p>
+      <p>I can code.</p>
       
     </footer>
     <script src="./assets/script.js"></script>
